@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="488.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainPageController">
+   <children>
+      <TextField fx:id="location" layoutX="42.0" layoutY="58.0" prefHeight="25.0" prefWidth="263.0" promptText="Location of the Folder" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="58.0" />
+      <TextField fx:id="renameFileLocation" layoutX="324.0" layoutY="58.0" prefHeight="25.0" prefWidth="178.0" promptText="Location of the file to rename" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="58.0" />
+      <Button layoutX="266.0" layoutY="113.0" mnemonicParsing="false" onAction="#convert" prefHeight="25.0" prefWidth="115.0" text="Convert" />
+      <TableView fx:id="filenotfoundTable" layoutX="74.0" layoutY="198.0" prefHeight="200.0" prefWidth="263.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="74.0" AnchorPane.topAnchor="198.0">
+        <columns>
+          <TableColumn fx:id="renamefrom" prefWidth="121.0" text="Rename from" />
+          <TableColumn fx:id="renameto" prefWidth="141.0" text="Rename to" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="156.0" layoutY="398.0" text="Total rename files are:" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="156.0" />
+      <TextField fx:id="extField" layoutX="519.0" layoutY="58.0" prefHeight="25.0" prefWidth="71.0" promptText="extension" />
+      <TableView fx:id="renameTableview1" layoutX="355.0" layoutY="198.0" prefHeight="200.0" prefWidth="263.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="198.0">
+         <columns>
+            <TableColumn fx:id="col" prefWidth="262.0" text="File not found" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
